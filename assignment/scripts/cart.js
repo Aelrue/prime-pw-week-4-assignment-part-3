@@ -6,15 +6,18 @@ console.log("***** Cart Functions *****");
 // Update the `cart.js` file to do the following:
 
 // - Create a global variable named `basket` and set it to an empty array.
-const groceries = ["apples", "oatmeal", "meat", "bread"];
-let basket = [];
+const basket = [];
 // - Create a function called `addItem`. It should:
 //   - take an input parameter for a string `item`
 //   - add the new item to the global array `basket`.
 //   - return `true` indicating the item was added
 function addItem(item) {
-  console.log("in addItem", item);
+  basket.push(item);
+  console.log(basket);
 }
+addItem("bananas");
+addItem("primal");
+addItem("pizza");
 // - Create a function called `listItems`. It should:
 //   - loop over the items in the `basket` array
 //   - console.log each individual item on a new line
