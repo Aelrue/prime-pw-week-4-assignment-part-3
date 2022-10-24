@@ -14,10 +14,12 @@ const basket = [];
 function addItem(item) {
   basket.push(item);
   console.log(basket);
+  return true;
 }
-addItem("bananas");
-addItem("primal");
-addItem("pizza");
+console.log(addItem("bananas"));
+console.log(addItem("primal"));
+console.log(addItem("pizza"));
+
 // - Create a function called `listItems`. It should:
 //   - loop over the items in the `basket` array
 //   - console.log each individual item on a new line
