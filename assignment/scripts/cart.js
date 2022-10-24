@@ -6,7 +6,7 @@ console.log("***** Cart Functions *****");
 // Update the `cart.js` file to do the following:
 
 // - Create a global variable named `basket` and set it to an empty array.
-const basket = [];
+let basket = [];
 // - Create a function called `addItem`. It should:
 //   - take an input parameter for a string `item`
 //   - add the new item to the global array `basket`.
@@ -43,6 +43,13 @@ listItems(basket);
 // console.log(`Basket is now ${basket}`);
 // ```
 
+function empty() {
+  basket = [];
+  console.log("Emptying Basket");
+}
+console.log(`Basket is ${basket}`);
+empty();
+console.log(`Basket is now${basket}`);
 // ### Stretch Goals
 // Remember that Stretch Goals are not required, but will help you to further develop concepts from the skills we have covered.
 
