@@ -24,6 +24,12 @@ console.log(addItem("pizza"));
 //   - loop over the items in the `basket` array
 //   - console.log each individual item on a new line
 
+function listItems(array) {
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+}
+listItems(basket);
 // - Create a function called `empty`. It should:
 //   - reset the `basket` to an empty array
 
